@@ -20,7 +20,7 @@ public class NewTest {
 	  driver.get("https://www.amazon.in");
 	  driver.findElement(By.xpath("//*[text()='Hello. Sign in']")).click();
 	  driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("bhadrebalaji@gmail.com",Keys.ENTER);
-	  driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("jodha@123",Keys.ENTER);
+	  driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("jodha@1",Keys.ENTER);
 	  String product_in_cart=driver.findElement(By.xpath("//*[@class='nav-cart-count nav-cart-1']")).getText();
 	  driver.findElement(By.xpath("//*[@class='nav-cart-count nav-cart-1']")).click();
 	  int number_of_products=Integer.parseInt(product_in_cart);
