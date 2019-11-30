@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing on Myntra]">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Yahoo App Test(failed)">
+    <classes>
+      <class name="Runner.myntra">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="initalizebrowser"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runner.myntra -->
+    </classes>
+  </test> <!-- Yahoo App Test(failed) -->
+</suite> <!-- Failed suite [Testing on Myntra] -->
